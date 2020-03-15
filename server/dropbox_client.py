@@ -36,9 +36,9 @@ def upload_file(file_path, output_filepath, dbx_inst):
 		print err
 		return "Upload to Dropbox succeeded."
 
-def download_file(file_name, dbx_inst):
+def download_file(local_filename, dropbox_file_name, dbx_inst):
 	try:
-		dbx_inst.files_download_to_file(file_name,'/'+file_name)
+		dbx_inst.files_download_to_file(local_filename, dropbox_file_name)
 		print "download succeeded."
 	except ApiError as err:
 		print err

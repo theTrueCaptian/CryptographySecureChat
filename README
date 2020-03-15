@@ -1,6 +1,44 @@
+There is a video explaining our project:
+https://drive.google.com/open?id=0BzAXNUTAvnZ9UWZWaHFJR3lLU2c
+
 Prerequisites:
 
 - Install PyCrypto 2.6.1: https://pypi.python.org/pypi/pycrypto 
 	- Upzip and run the following commands:
 		- python setup.py build
 		- python setup.py install
+
+- Make sure to download dropbox package:
+	pip install dropbox                    
+
+- IMPORTANT: ENSURE THAT PARENT FOLDERS DO NOT CONTAIN ANGULAR BRACKETS WHEN SPECIFYING FILENAMES TO UPLOAD TO DROPBOX!!!
+
+Dropbox information: 
+
+# Credntials for the dropbox account:    #
+# Email: cs9603.client1@gmail.com        #
+# Password:  cs9603_client1              #
+
+Run:
+In the server folder:
+python server.py
+In the client folder:
+python client.py
+
+Log in with one of the credentials:
+('Alice', 'maeda'), 
+('Bob', 'maeda'), 
+('Eve', 'evil')
+
+Once running, you will see an ACL file. It records the access control list.
+
+
+Here are a list of commands:
+ /shareto <filename> <users>
+ /list --> Get a list of files 
+ /addusers <filename> <users> 
+ /download <filename> 
+ /deleteusers <filename> <users> 
+ /deletefile <filename> 
+
+
