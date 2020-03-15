@@ -1,0 +1,6 @@
+Prerequisites:
+
+- Install PyCrypto 2.6.1: https://pypi.python.org/pypi/pycrypto 
+	- Upzip and run the following commands:
+		- python setup.py build
+		- python setup.py install
